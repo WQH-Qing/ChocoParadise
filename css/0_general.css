@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans TC;            
+}
+ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;}
+.logo{
+    width: 100px;
+    height: 97px;
+}
+nav{
+    width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content:space-around; 
+    align-items: center;  
+}
+
+nav div.menu > ul.list >li {
+    list-style: none;   
+    margin-left: 20px;  
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;  
+}
+nav div.menu > ul.list > li > a { 
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+} 
+
+nav div.menu > ul.list >li > div.product , div.activity {
+    position: relative;
+    padding: 5px 10px;
+
+}
+nav div.menu > ul.list > li > div.product:hover ul.product{
+    display: block;
+}
+
+nav div.menu > ul.list > li > div.product > ul.product{
+    list-style: none;    
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 6px;
+    right: 5px;
+    display: none;
+}
+nav div.menu > ul.list > li > div.product >ul.product > li > a {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+
+}
+
+nav div.menu > ul.list > li > div.activity:hover ul.activity{
+    display: block;
+}
+
+nav div.menu > ul.list > li > div.activity > ul.activity{
+    list-style: none;    
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 6px;
+    right: 5px;
+    display: none;
+}
+nav div.menu > ul.list > li > div.activity >ul.activity > li > a {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+}
+h1::after{
+    content: '';
+    /* 插入一條裝飾線 */
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: #37140d;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+h1::before{
+    content: '';
+    /* 插入一條裝飾線 */
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: #37140d;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+h2{
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #5E0B15;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+footer>p{
+    margin: 0;
+    padding: 0;
+}
+div.foot{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+div.foot .social_media img{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+button.top{
+    color: #37140d;
+    background-color: antiquewhite;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    right: 50px;  
+    bottom: 70px;
+    border-color: rgba(255, 235, 205, 0);
+    cursor: pointer;
+}

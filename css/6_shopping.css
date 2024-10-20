@@ -1,0 +1,35 @@
+main{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+/* 左邊選單 */
+div.list>ul.product li a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+/* 右邊商品列 */
+img.mainPhoto{
+    width: 450px;
+    height: 450px;
+}
+
+img.miniPhoto{
+    width: 120px;
+    height: 120px;
+}
+
+div.miniPhoto{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    
+}

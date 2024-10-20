@@ -1,0 +1,52 @@
+img.promote{
+    width: 100%;
+}
+div.promote{
+    width: 1200px;
+    margin: auto;
+}
+
+div.news>.item>img.news{
+    width: 360px;
+    height: 360px;
+}
+div.news>.item>button.news{
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+div.news>.item{
+    width: 360px;
+}
+div.news , div.category{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+}
+div.news>.item>p{
+    text-align: left;
+}
+
+div.category img.category{
+    width: 350px;
+    height: 350px;
+    border-radius: 360px;
+}
+
+div.order{    
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px; 
+    text-align: center;
+
+} 
+
+div.order img.order{
+    width: 350px;
+    height: 350px;
+}

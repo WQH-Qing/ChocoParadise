@@ -1,0 +1,68 @@
+div.intro{
+    width:100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #d9cab3c3;
+    align-items: center;
+    margin-top: 30px;
+    white-space: pre;
+}
+div.intro img{
+    width: 50%;
+    height: 50%;
+}
+div.introText{
+    width: 50%;
+
+}
+
+div.box{
+    width: 270px;
+    background-color: #ffba82;
+    text-align: center;
+    border-radius: 10px;
+}
+div.box>p{
+    text-align: left;
+    font-size: 18px;
+}
+
+
+.information{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contein img{
+    width: 360px;
+}
+
+.contein h2{
+    color: black;
+}
+
+.act{
+    width:1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contein{
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 18px;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.order{
+text-align: center;
+}

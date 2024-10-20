@@ -1,0 +1,60 @@
+main{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+/* 左邊選單 */
+div.list>ul.product li a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+/* 右邊商品列 */
+.productPhoto{
+    width: 260px;
+    height: 260px;
+}
+
+div.display>ul.product>li{
+    width: 260px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.price{
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0;
+}
+
+div.display>ul.product{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.display{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.numberLine{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.numberLine a{
+    font-size: 20px;
+    padding-right: 5px;
+}

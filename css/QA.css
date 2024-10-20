@@ -1,0 +1,32 @@
+.iconPlus{
+    font-size: 24px;
+    padding-right: 20px;
+    font-weight: bold
+}
+
+.content h2,p{
+    padding-left: 10px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.contentTitle{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contentText{
+    border: 1px solid #ccc;
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.content{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+}
