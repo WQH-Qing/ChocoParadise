@@ -78,8 +78,8 @@ div.btnNum{
 }
 .btnNum button:hover{
     color: rgb(255, 0, 0);
-    /* border: 2px solid brown; */
     border: none;
+    font-weight: 700;
 }
 div.btnSbmt button{
     padding: 2px 20px;
@@ -90,20 +90,25 @@ div.btnSbmt button{
     width: 49%;
 }
 div.btnSbmt .cart{
-    background-color: white;
-}
-div.btnSbmt .buy{
-    background-color: rgb(255, 174, 98);
-    border: rgb(255, 174, 98);;
+    background-color:#956134;
+    border-color: #956134;
     color: white;
 }
 
-
-.features h2{
-padding-left: 40px;
+div.btnSbmt .cart:hover{
+    background-color:white;
+    border-color: #956134;
+    color:#956134;
 }
-.features p{
-    white-space: pre;
+div.btnSbmt .buy{
+    background-color: #962100;
+    border-color: #962100;
+    color: white;
+}
+div.btnSbmt .buy:hover{
+    background-color: white;
+    border-color: #962100;
+    color: #962100;
 }
 
 
