@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/0_general.css">
-    <link rel="stylesheet" href="./css/1_home.css">
+    <link rel="stylesheet" href="./css/7_login.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/0_general.js"></script>
@@ -64,72 +64,39 @@
         </div>
     </nav>
     <hr style="width: 1200px;">
-    <div class="promote">
-        <img src="./imgFinal/dm_halloween.png" class="promote">
-    </div>   
 
-    <h1>最新消息</h1>
-    <div class="news">
-        <div class="item">
-            <img src="./imgFinal/Macaron.jpg" class="news">
-            <h2>萬聖節限定巧克力商品!!!</h2>
-            <p>在這個充滿神秘與驚喜的萬聖節，讓我們的巧克力為您的派對增添一絲甜蜜的氣氛！無論是鬼魅的黑巧克力，還是令人心跳加速的焦糖口味，每一口都是無法抵擋的誘惑。</p>
-            <button class="news">MORE</button>
-        </div>
-        <div class="item">
-            <img src="./imgFinal/sliceCake.jpg" class="news">
-            <h2>秋天的溫暖巧克力</h2>
-            <p>當金黃色的樹葉在微風中翩翩起舞，秋天的氣息悄然降臨。這個季節，讓我們的巧克力成為您心靈的慰藉，帶來無盡的溫暖與舒適。</p>
-            <button class="news">MORE</button>
-        </div>
-        <div class="item">
-            <img src="./imgFinal/welcome.jpg" class="news">
-            <h2>敦親睦鄰 邀您鄰近來做客</h2>
-            <p>北北基的朋友們，出示證明即可免費入園唷！活動時間：即日起至2024年12月31日止</p>
-            <button class="news">MORE</button>
-        </div>
-    </div> 
-    
-    <div class="category">
-        <div class="item">
-            <a href="#">
-                <img src="./imgFinal/DIY.jpg" class="category">
-                <h2>DIY活動</h2>
-            </a>
+    <h1>登入</h1>
+<main>
+    <!-- 左邊自有會員 -->
+    <div class="own">        
+        <div class="account">
+            <label for="account">帳號</label>
+            <input type="text" name="account" id="account" placeholder="手機/電子信箱">
         </div>
 
-        <div class="item">
-            <a href="#">
-                <img src="./imgFinal/manorCircle.jpg" class="category">
-                <h2>導覽園區</h2>
-            </a>
+        <div class="password">
+            <label for="password">密碼</label>
+            <input type="password" name="password" id="password">
         </div>
-        <div class="item">
-            <a href="#">
-                <img src="./imgFinal/KaoliangSpirit_circle.jpg" class="category">
-                <h2>巧克力產品</h2>
-            </a>
+
+        <button type="submit">確認</button>
+
+        <div class="note">
+            <a href="#">忘記密碼？</a>
+            <a href="#">會員註冊</a>
+        </div>      
+    </div>
+    <!-- 右邊快速登入 -->
+    <div class="sso">
+        <h2>快速登入</h2>
+        <div class="social_media">
+            <img src="./imgFinal/icon/login_fb.png" alt="">
+            <img src="./imgFinal/icon/login_line.png" alt="">
+            <img src="./imgFinal/icon/login_google.png" alt="">
         </div>
     </div>
 
-    <div class="order">
-        <div class="item">
-            <a href="#">
-                <img src="./imgFinal/order.jpg" class="order">
-                <h2>預約導覽/活動</h2>
-            </a>
-        </div>
-        <div class="item">
-            <a href="#">
-                <img src="./imgFinal/cart.jpg" class="order">
-                <h2>線上購物</h2>
-            </a>
-        </div>
-
-    </div>
-
-    <button class="top">top</button>
-
+</main>
 <footer>
     <div class="foot">
         <div class="contact">
