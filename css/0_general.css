@@ -14,16 +14,47 @@ a{
     color: black;}
 .logo{
     width: 100px;
-    height: 97px;
+    height: 80px;
 }
+
+/* 漢堡選單 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+ }
+
+ .hamburger span{
+     width: 25px;
+     height: 3px;
+     background-color: black;
+     margin: 3px 0;
+     transform-origin: left;
+     cursor: pointer;
+     transition: .3s ease;
+ }
+
+ .hamburger.active span:nth-child(1){
+     transform: rotate(45deg);
+ }
+ .hamburger.active span:nth-child(2){
+     opacity: 0;
+ }
+ .hamburger.active span:nth-child(3){
+     transform: rotate(-45deg);
+ }
+
 nav{
     width: 1200px;
     margin: auto;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     display: flex;
     justify-content:space-around; 
     align-items: center;  
+}
+
+hr{
+    width: 1200px;
 }
 
 nav div.menu > ul.list >li {
@@ -119,8 +150,9 @@ nav div.menu > ul.list > li > div.member >ul.member > li > a {
     background-color: white;
 }
 
+
 h1{
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     margin-top: 30px;
 }
@@ -145,12 +177,12 @@ h1::before{
     margin-left: 20px;
 }
 h2{
-    font-size: 22px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
     margin: 0;
 }
@@ -164,11 +196,11 @@ footer{
     margin-top: 90px;
 }
 footer>p{
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 div.foot{
-    width: 1000px;
+    width: 800px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -199,13 +231,17 @@ button.top{
     cursor: pointer;
 }
 
+.top.hide{
+    opacity: 0;
+}
+
 div.btnNum{
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .btnNum button{
     width: 24px;
@@ -224,3 +260,86 @@ div.btnNum{
     border: none;
     font-weight: 700;
 }
+
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    h1,h2,p{
+        font-size: 1rem;
+    }
+    h1::after{
+        width: 20%;
+    }
+    h1::before{
+        width: 20%;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    nav , hr{
+        width: 100%;
+    }
+    
+    ul.list{
+        flex-direction: column;
+        background-color: wheat;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        height: 70%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    ul.list.active{
+        display: flex;
+    }
+    
+
+    ul.list li{
+        margin:20px 0;
+    }
+
+    div.foot{
+        width: 100%;
+    }
+
+    ul.product li{
+        margin: 0;
+    }
+    ul.activity li{
+        margin: 0;
+    }
+    ul.member li{
+        margin: 0;
+    }
+
+
+    /* nav div.menu > ul.list > li > div.product:hover ul.product{
+        display: block;
+    }
+    
+    nav div.menu > ul.list > li > div.product > ul.product{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 6px;
+        right: 5px;
+        display: none;
+    }
+    nav div.menu > ul.list > li > div.product >ul.product > li > a {
+        border: 1px solid black;
+        width: 100%;
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        background-color: white;
+    } */
+
+} 

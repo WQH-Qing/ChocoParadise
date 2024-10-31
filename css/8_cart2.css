@@ -34,7 +34,7 @@
 
 .login{
     /* margin: 30px 0; */
-    width: 60%;
+    width: 100%;
     margin: auto;
     border: 1px solid #37140d;
     border-radius: 10px;
@@ -126,4 +126,24 @@
     width: 30%;
     display: flex;
     justify-content: space-around;
+}
+.buyerinform{
+    width: 1000px;
+    margin: auto;
+}
+.buyerinform .item_header{
+    padding: 2px 15px;
+    margin-bottom: 30px;
+}
+.buyer{
+    display: flex;
+    justify-content: space-around;
+}
+label{
+    display: block;
+    line-height: 2;
+}
+.left input{
+    width: 100%;
+    line-height: 1.5;
 }

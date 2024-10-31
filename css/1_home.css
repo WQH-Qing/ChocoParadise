@@ -2,8 +2,8 @@ img.promote{
     width: 100%;
 }
 div.promote{
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+    object-fit: contain;
 }
 
 div.news>.item>img.news{
@@ -14,20 +14,42 @@ div.news>.item>button.news{
     border-radius: 5px;
     font-size: 16px;
     padding: 5px;
+    border-color: bisque;
+    background-color: beige;
+    color: brown;
 }
-div.news>.item{
-    width: 360px;
-}
+
 div.news , div.category{
     width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-div.news>.item>p{
+
+div.news>.item{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item{
+    padding: 20px 0;    
+}
+
+div.order{
+    margin: 100px 0;
+}
+div.news>.item p{
     text-align: left;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+div.news>.item h2{
+    padding: 5px 0;
 }
 
 div.category img.category{
@@ -49,3 +71,22 @@ div.order img.order{
     width: 350px;
     height: 350px;
 }
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    .promote{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    div.news , div.category , div.order{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+} 
