@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/0_general.css">
     <link rel="stylesheet" href="./css/3_explore.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/0_general.js"></script>
 </head>
 <body>
     <nav>
@@ -19,36 +22,30 @@
             <ul class="list">
                 <li><a href="http://127.0.0.1:5500/2_NEWS.html">最新消息</a></li>
                 <li><a href="http://127.0.0.1:5500/3_explore.html">探索我們</a></li>
-                <li><a href="http://127.0.0.1:5500/5_allProduct.html">所有商品</a>
-                    <div class="product">
-                        <ul class="product">
-                            <li><a href="http://127.0.0.1:5500/5_allProduct.html">全站商品</a></li>
-                            <li><a href="#">生巧克力</a></li>
-                            <li><a href="#">堅果巧克力</a></li>
-                            <li><a href="#">夾心巧克力</a></li>
-                            <li><a href="#">麵包蛋糕</a></li>
-                            <li><a href="#">冰淇淋</a></li>
-                            <li><a href="#">期間限定</a></li>
-                        </ul>
-                    </div>                    
+                <li><a href="http://127.0.0.1:5500/5_allProduct.html" class="dropdown">所有商品</a>
+                    <ul class="dropdown-open">
+                        <li><a href="http://127.0.0.1:5500/5_allProduct.html">全站商品</a></li>
+                        <li><a href="#">生巧克力</a></li>
+                        <li><a href="#">堅果巧克力</a></li>
+                        <li><a href="#">夾心巧克力</a></li>
+                        <li><a href="#">麵包蛋糕</a></li>
+                        <li><a href="#">冰淇淋</a></li>
+                        <li><a href="#">期間限定</a></li>
+                    </ul>  
                 </li>
-                <li><a href="#">活動預約</a>
-                    <div class="activity">
-                        <ul class="activity">
-                            <li><a href="#">全站活動</a></li>
-                            <li><a href="#">巧克力DIY</a></li>
-                            <li><a href="#">免費導覽</a></li>
-                            <li><a href="#">深度品鑑</a></li>
-                        </ul>
-                    </div>
+                <li><a href="#" class="dropdown">活動預約</a>
+                    <ul class="dropdown-open">
+                        <li><a href="#">全站活動</a></li>
+                        <li><a href="#">巧克力DIY</a></li>
+                        <li><a href="#">免費導覽</a></li>
+                        <li><a href="#">深度品鑑</a></li>
+                    </ul>
                 </li>
-                <li><a href="http://127.0.0.1:5500/7_login.html">會員專區</a>
-                    <div class="member">
-                        <ul class="member">
-                            <li><a href="http://127.0.0.1:5500/7_login.html">會員登入</a></li>
-                            <li><a href="http://127.0.0.1:5500/MembershipSystem.html">會員制度</a></li>
-                        </ul>
-                    </div>
+                <li><a href="http://127.0.0.1:5500/7_login.html" class="dropdown">會員專區</a>
+                    <ul class="dropdown-open">
+                        <li><a href="http://127.0.0.1:5500/7_login.html">會員登入</a></li>
+                        <li><a href="http://127.0.0.1:5500/MembershipSystem.html">會員制度</a></li>
+                    </ul>
                 </li>
                 <li><a href="http://127.0.0.1:5500/QA.html">常見問題</a></li>
             </ul>
@@ -68,40 +65,35 @@
     <hr>
 <!-- 上面為選單 -->
 
-    <div class="intro">
+    <div class="intro introLeft-img">
         <img src="./imgFinal/choco.jpg">
-        <div class="introText">        
-            <p>
-            巧克沛塔
-            聚集一群熱愛巧克力的極度愛好者，
-            走遍世界各地無數的巧克力工廠，
-            深入與當地職人探討巧克力的奧妙，
-            甚至為了讓巧克力的品質更進一步得到保證，
-            與特級可可樹莊園保持良好的合作關係，
-            掌握從可可豆生長在樹上到進入自有工廠低溫烘烤等一系列流程，
-            堅持以純天然原料製作並以追求最佳品質保證為目標，
-            為了展現了巧克力獨特的風味。
-            </p>
+        <div class="introText">
+            <div class="introText-inner">
+                <p>巧克沛塔</p>
+                <p>聚集一群熱愛巧克力的極度愛好者，</p>
+                <p>走遍世界各地無數的巧克力工廠，</p>
+                <p>深入與當地職人探討巧克力的奧妙，</p>
+                <p>與特級可可樹莊園保持良好的合作關係，</p>
+                <p>掌握從可可豆生長在樹上到進入自有工廠低溫烘烤等一系列流程，</p>
+                <p>堅持以純天然原料製作並以追求最佳品質保證為目標，</p>
+                <p>為了展現了巧克力獨特的風味。</p>
+            </div>
         </div>
 
     </div>
-    <div class="intro">  
-        <div class="introText">      
-            <p> 
-            巧克沛塔為更完整掌握品質，
-            投資參與了世界最頂級可可產區中的可可莊園的生產，
-            將當地優質的可可豆運回台灣加工製造，
-            以最好的原料做最好的巧克力。
-            同時為推廣可可文化，
-            定時專人導覽解說，
-            介紹可可文化及知識
-            透過DIY實際體驗巧克力製作過程之外，
-            園區四面環山水氣旺盛，
-            是植物生長的好地方，
-            且園區景觀隨春夏秋冬而變，
-            只要您對巧克力、大自然非常有興趣的人!
-            您都會愛上這裡。
-            </p>
+    <div class="intro introRight-img">  
+        <div class="introText">  
+            <div class="introText-inner">
+                <p>為推廣可可文化，</p>
+                <p>定時專人導覽解說，</p>
+                <p>介紹可可文化及知識</p>
+                <p>透過DIY實際體驗巧克力製作過程之外，</p>
+                <p>園區四面環山水氣旺盛，</p>
+                <p>是植物生長的好地方，</p>
+                <p>且園區景觀隨春夏秋冬而變，</p>
+                <p>只要您對巧克力、大自然非常有興趣的人!</p>
+                <p>您都會愛上這裡。</p>
+            </div>            
         </div>
         <img src="./imgFinal/fruit.jpg" >       
     </div>
@@ -125,9 +117,8 @@
                 
                 <P>優待票適用對象</P>
                 <P>1. 學生</P>
-                <P>2. 65歲以上長者</P>
-                <P>7歲以下孩童</P>
-                <P>4. 身心障礙者</P>
+                <P>2. 65歲以上長者 與 7歲以下孩童</P>
+                <P>3. 身心障礙者</P>
                 <P>(以上購票請出示相關證明文件)</P>
                 
             </div>
@@ -147,7 +138,7 @@
                 <P>．DIY手作教室</P>
                 <P>．巧克力品鑑</P>
                 <P>．可可歷史知識講解</P>
-                <P>．寵物友善空間【因建築物內多為巧克力商品，為避免寵物誤食而導致生命危險，寵物請以箱籠或推車方式入內，謝謝配合。】</P>
+                <P>．寵物友善空間</P>
             
             </div>
         </div>
@@ -183,7 +174,7 @@
 
 
 <!-- 下面為goTop+footer -->
-    <button class="top">top</button>
+    <button class="to-top">top</button>
     <footer>
         <div class="foot">
             <div class="contact">

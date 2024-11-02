@@ -77,82 +77,36 @@ nav div.menu > ul.list > li > a {
     padding: 5px 10px;
 } 
 
-nav div.menu > ul.list >li > div.product , div.activity , div.member{
+nav div.menu > ul.list >li{
     position: relative;
     padding: 5px 10px;
 
 }
-nav div.menu > ul.list > li > div.product:hover ul.product{
-    display: block;
-}
 
-nav div.menu > ul.list > li > div.product > ul.product{
-    list-style: none;    
+nav>div.menu > ul.list ul.dropdown-open{
     position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    top: 6px;
-    right: 5px;
+    top: 37px;
+    left: 5px;
     display: none;
+    z-index: 100;    
 }
-nav div.menu > ul.list > li > div.product >ul.product > li > a {
-    text-decoration: none;
-    border: 1px solid black;
-    width: 100%;
-    display: inline-block;
-    padding: 5px;
-    text-align: center;
-    background-color: white;
-
-}
-
-nav div.menu > ul.list > li > div.activity:hover ul.activity{
+nav>div.menu > ul.list  li:hover ul{
     display: block;
-}
-
-nav div.menu > ul.list > li > div.activity > ul.activity{
-    list-style: none;    
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    top: 6px;
-    right: 5px;
-    display: none;
-}
-nav div.menu > ul.list > li > div.activity >ul.activity > li > a {
+} 
+nav>div.menu > ul.list ul.dropdown-open a {
     text-decoration: none;
+    border-radius: 5px;
     border: 1px solid black;
-    width: 100%;
+    width: 100px;
     display: inline-block;
     padding: 5px;
     text-align: center;
     background-color: white;
 }
 
-nav div.menu > ul.list > li > div.member:hover ul.member{
-    display: block;
-}
-
-nav div.menu > ul.list > li > div.member > ul.member{
-    list-style: none;    
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    top: 6px;
-    right: 5px;
-    display: none;
-}
-nav div.menu > ul.list > li > div.member >ul.member > li > a {
-    text-decoration: none;
-    border: 1px solid black;
-    width: 100%;
-    display: inline-block;
-    padding: 5px;
-    text-align: center;
-    background-color: white;
+nav div.menu > ul.list > li  a:hover{
+    background-color: rgb(189, 47, 15);
+    color: white;
 }
 
 
@@ -219,7 +173,8 @@ div.foot .social_media img{
     padding-right: 10px;
 }
 
-button.top{
+.to-top{
+    display: none;
     color: #37140d;
     background-color: antiquewhite;
     font-size: 18px;
@@ -231,13 +186,16 @@ button.top{
     text-transform: uppercase;
     position: fixed;
     right: 50px;  
-    bottom: 70px;
-    border-color: rgba(255, 235, 205, 0);
+    bottom: 50px;
+    border: none;
     cursor: pointer;
+    z-index: 500;
 }
 
-.top.hide{
-    opacity: 0;
+
+
+.to-top:hover{
+    background-color: rgb(253, 214, 164);
 }
 
 div.btnNum{
@@ -270,7 +228,7 @@ div.btnNum{
 /* 手機斷點 */
 @media screen and (max-width:768px){
     h1,h2,p{
-        font-size: 1rem;
+        font-size: 0.75 em;
     }
     h1::after{
         width: 20%;
@@ -292,7 +250,7 @@ div.btnNum{
         background-color: wheat;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
         height: 70%;
         display: none;
@@ -301,6 +259,17 @@ div.btnNum{
         padding: 0;
         z-index: 100;
     }
+
+    nav div.menu > ul.list > li > a { 
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 0px;
+    } 
+
+    nav div.menu > ul.list > li:hover{
+        background-color: rgb(189, 47, 15);
+        width: 100%;
+        text-align: center;
+    }
     
     ul.list.active{
         display: flex;
@@ -308,23 +277,39 @@ div.btnNum{
     
 
     ul.list li{
-        margin:20px 0;
+        margin:10px 0;
     }
 
+    nav>div.menu > ul.list ul.dropdown-open{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(255, 218, 139);
+        z-index: 100; 
+        left: 0;
+    }
+
+    
+
+   
+
+    nav>div.menu > ul.list ul.dropdown-open a {
+        text-decoration: none;
+        border: rgba(0, 0, 0, 0);
+        width:100%;
+        display: inline-block;
+        padding: px;
+        text-align: center;
+        background-color: rgb(255, 218, 139);
+    }
+
+    ul.dropdown-open li{
+        margin: 0;
+    }
+    
     div.foot{
         width: 100%;
     }
-
-    ul.product li{
-        margin: 0;
-    }
-    ul.activity li{
-        margin: 0;
-    }
-    ul.member li{
-        margin: 0;
-    }
-
-
-
 } 

@@ -15,10 +15,9 @@ $(document).ready(function () {
     let timer = setInterval(moveToNext, 5000)
 
     $('#contentButton li').click(function(){
-        clearInterval(timer)  // 停掉計時器
+        clearInterval(timer)  // 停止計時器
 
         index = $(this).index()
-        // alert(index)
 
         $('#content').animate({
             left: divWidth * index * -1,
@@ -31,7 +30,6 @@ $(document).ready(function () {
     })
 
     function moveToNext(){
-        // 控制 index 只能介於 0 ~ 7
         if(index < imgCount - 1){
             index++
         }else{
