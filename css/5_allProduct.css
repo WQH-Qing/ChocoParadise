@@ -1,10 +1,12 @@
 main{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: space-around; */
+    padding: 0 10px;
 }
 /* 左邊選單 */
+div.list{width: 15%;}
 div.list>ul.product li a{
     text-decoration: none;
     border: 1px solid black;
@@ -15,40 +17,41 @@ div.list>ul.product li a{
     width: 150px;
     text-align: center;
 }
+div.list>ul.product{
+    margin-top: 10px;
+}
 
 /* 右邊商品列 */
+div.display{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+div.display>ul.product{
+    /* width: 900px; */
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.display >h2{
+    padding-bottom: 20px;
+}
 .productPhoto{
     width: 260px;
-    height: 260px;
 }
 
 div.display>ul.product>li{
-    width: 260px;
     text-align: center;
     margin-bottom: 50px;
+    /* flex: 1 0 21%; */
 }
 .price{
     font-weight: 700;
     font-size: 24px;
     padding: 0;
 }
-
-div.display>ul.product{
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-}
-
-.display{
-    margin-left: 50px;
-    margin-top: 10px;
-}
-
-
-
-
 
 .numberLine{
     text-align: center;
@@ -57,3 +60,39 @@ div.display>ul.product{
     font-size: 20px;
     padding-right: 5px;
 }
+
+/* 手機斷點 */
+@media screen and (max-width:768px) {
+    div.list{
+        display: none;
+    }
+
+    div.display{
+        width: 100%;
+        margin: 0;
+    }
+    div.display>ul.product{
+        /* justify-content: center; */
+        justify-content: space-between;
+    }
+
+    div.display>ul.product>li{
+        width: calc(50%-10px);
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        flex: 1 0 35%;
+    } 
+    .productPhoto {
+        max-width: 100%; /
+    }
+
+    h2 , p {
+        font-size: 1em;
+    }
+
+    .price{
+        font-size: 1em;
+    }
+}
+    

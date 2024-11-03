@@ -41,3 +41,10 @@ td.noColor{
     color: #000000;
     text-align: left;
 }
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    table{
+        width: 100%;
+    }
+}

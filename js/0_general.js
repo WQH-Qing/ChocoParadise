@@ -38,15 +38,19 @@ $(document).ready(function(){
         $('.list').toggleClass('active')
     })
 
+    // 消除CSS中設定的這個hover ==> ul.list  li:hover ul{display: block;} 
+    //  不成功XXX
+    // $('.list > li').mouseenter(function() {
+    //     $(this).removeClass(':hover');
+    // });
+  
+
 // 手機版的選單點選
     $('.list > li').click(function(e) {
         // 防止事件冒泡到父元素
         e.stopPropagation();
         
-        // 切換子選單顯示
         $(this).children('.dropdown-open').slideToggle();
-        
-        // 其他子選單隱藏
         $(this).siblings().children('.dropdown-open').slideUp();
     });
 

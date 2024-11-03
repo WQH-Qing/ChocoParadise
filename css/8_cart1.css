@@ -54,7 +54,7 @@
 
 /* 購入商品陳列 */
 .buylist{
-    width: 1000px;
+    max-width: 1000px;
     padding: 30px 0;
     margin: auto;
 }
@@ -181,4 +181,9 @@
     border-radius: 10px;
     border: none;
     padding: 5px 10px;
+}
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    
 }

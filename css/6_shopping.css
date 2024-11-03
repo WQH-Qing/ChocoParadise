@@ -1,5 +1,5 @@
 main{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -33,7 +33,7 @@ div.miniPhoto{
     justify-content: space-between;
 }
 .wrapProduct{
-    width: 950px;
+    max-width: 950px;
     display: flex;
     padding: 17px 30px;
 }
@@ -111,4 +111,39 @@ div.btnSbmt .buy:hover{
     color: #962100;
 }
 
+/* 手機斷點 */
+@media screen and (max-width:768px) {
+    div.left{
+        display: none;
+    }
 
+    div.right{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .wrapProduct{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    
+    .order{
+        width: 65%;
+        /* margin: auto; */
+        margin-top: 30px;
+        padding: 0 50px;
+    }
+    
+    .features{
+        width: 90%;
+        margin: auto;
+    }
+    .features> h2,h3{
+        text-align: center;        
+    }
+
+
+}

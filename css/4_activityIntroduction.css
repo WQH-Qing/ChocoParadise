@@ -4,6 +4,7 @@
 
 .item h2{
     color: black;
+    padding: 10px;
 }
 .item{
     text-align: center;
@@ -27,6 +28,7 @@ button{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 50px;
 }
 .itemText{
     padding-left:70px;
@@ -44,4 +46,14 @@ button{
     margin-right: 10px;
     border-radius: 360px;
     text-align: center;
+}
+
+/* 手機斷點 */
+@media screen and (max-width:768px){
+    .contein{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
 }
