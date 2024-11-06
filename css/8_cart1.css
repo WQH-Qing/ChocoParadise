@@ -82,15 +82,15 @@
     border: 1px solid white;
 }
 .item_header > .price{
-    width: 10%;
+    width: 15%;
     border: 1px solid white;
 }
 .item_header > .count{
-    width: 30%;
+    width: 20%;
     border: 1px solid white;
 }
 .item_header > .amount{
-    width: 10%;
+    width: 15%;
     border: 1px solid white;
 }
 .item_header > .delete{
@@ -113,7 +113,7 @@
     
 }
 .item_body > .delete img{
-    width: 70%;
+    width: 65%;
 }
 
 .item_body > .item_detail{
@@ -125,13 +125,13 @@
     width: 15%;
 }
 .item_body > .price{
-    width: 10%;
+    width: 15%;
 }
 .item_body > .count{
-    width: 30%;
+    width: 20%;
 }
 .item_body > .amount{
-    width: 10%;
+    width: 15%;
 }
 .item_body > .delete{
     width: 5%;
@@ -140,7 +140,7 @@
 
 /* 寄送+付款+總金額 */
 .information{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -185,5 +185,29 @@
 
 /* 手機斷點 */
 @media screen and (max-width:768px){
-    
+    div.price>span{
+        font-size: 0.7em;
+        padding: 5px;
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buylist {
+        width: 95%;
+    }
+    .deliverPay, .orderTotal{
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .choose{
+        width: 60%;
+    }
+    div.btnNum{
+        width: 70%;
+    }
 }

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/0_general.css">
-    <link rel="stylesheet" href="./css/8_cart2.css">
+    <link rel="stylesheet" href="./css/8_cart3.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/0_general.js"></script>
@@ -69,12 +69,19 @@
 <main>
     <ul class="checklist">
         <li>購物車</li>
-        <li class="active">填寫資料</li>
-        <li>訂單完成</li>
+        <li>填寫資料</li>
+        <li class="active">訂單完成</li>
     </ul>
 
+    <h1>感謝您的訂購!</h1>
+    <div class="orderNumber">
+        <h3>訂購編號</h3>
+        <p>d20390-f-8203d9283-kd</p>
+    </div>
+
+
     
-    <!-- 商品確認 -->
+    <!-- 訂單詳情 -->
     <div class="buylist">
         <div class="item_header">
             <div class="item_detail">商品名稱</div>
@@ -112,113 +119,56 @@
             <div class="amount"><div class="price"><span>NTD$</span>360</div></div>
             
         </div>
-        <div class="Tcash">
-            <div class="itemTotal">
-                <p>運費</p>
-                <p class="price"><span>NTD$</span>360</p>
-            </div>
-        </div>
-        <div class="Tcash">
-            <div class="itemTotal">
-                <p>合計</p>
-                <p class="price"><span>NTD$</span>360</p>
-            </div>
-        </div>
     </div>
 
-    <!-- 訂購人資訊 -->
-     <div class="buyerinform">
-        <div class="item_header">訂購人資訊</div>
+    <!-- 訂購資訊 -->
+    <div class="orderInformation">
         <div class="buyer">
-                <div class="left">
-                    <div class="login">
-                        <p>已經是會員？登入後可以更方便管理訂單！</p>
-                        <button><a href="#">會員登入</a></button>
-                    </div>
-                    <div class="name">
-                        <label for="name">姓名</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="email">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="phone">
-                        <label for="phone">手機</label>
-                        <input type="tel" id="phone">
-                    </div>
-                </div>
-                <div class="right">
-                    <label for="note">訂單備註</label>
-                    <textarea id="note" maxlength="300" rows="10" cols="50" style="width: 308px"></textarea>
-                </div>
+            <h3>訂購姓名</h3>
+            <p>丁一一</p>
         </div>
-     </div>
-
-         <!-- 收件人資訊 -->
-         <div class="Receiverinform">
-            <div class="top_Receiverinform">
-                <div class="item_header">收件人資訊</div>
-                <div class="same"><input type="checkbox" name="same" id="same">收件人同訂購人資料請打勾</div>
-                
-            </div>
-            <div class="Receiver">
-                    <div class="left">
-                        <div class="name">
-                            <label for="name">姓名</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="email">
-                            <label for="email">E-Mail</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div class="phone">
-                            <label for="phone">手機</label>
-                            <input type="tel" id="phone">
-                        </div>
-                    </div>
-                    <div class="right">
-                        <label for="address">收件地址</label>
-                        <div class="city-district">
-                            <select name="citySelect" id="citySelect">
-                                <option value="">-- 請選擇縣市 --</option>
-                                <option value="taipei">臺北市</option>
-                            </select>
-                            <select name="districtSelect" id="districtSelect">
-                                <option value="">-- 請選擇鄉鎮[市]區 --</option>
-                                <option value="Songshan">松山區</option>
-                            </select>
-                        </div>
-                        <input type="text" name="address" id="address">
+        <div class="receiver">
+            <h3>收件者姓名</h3>
+            <p>丁一一</p>
+        </div>
+        <div class="receiverTel">
+            <h3>收件者電話</h3>
+            <p>0987654321</p>
+        </div>
+        <div class="orderDate">
+            <h3>訂購日期</h3>
+            <p>2024-11-11</p>
+        </div>
+        <div class="pay">
+            <h3>付款方式</h3>
+            <p>信用卡</p>
+        </div>
+        <div class="payment">
+            <h3>付款狀態</h3>
+            <p>已完成</p>
+        </div>
+        <div class="deliver">
+            <h3>送貨方式</h3>
+            <p>宅配</p>
+        </div>
+        <div class="receiver">
+            <h3>訂單狀態</h3>
+            <p>已成立</p>
+        </div>
+        <div class="receiver">
+            <h3>運費</h3>
+            <p><span>NTD$</span>180</p>
+        </div>
+        <div class="receiver">
+            <h3>應付金額</h3>
+            <p><span>NTD$</span>760</p>
+        </div>
+    </div>
     
-                        
-                    </div>
-            </div>
-         </div>
-        <!-- 付款+發票 -->
-         <div class="pay-and-invoice">
-            <div class="pay">
-                <div class="item_header">付款方式</div>
-                <p>已選擇的付款方式: 信用卡</p>
-                <div class="pay-data">
-                    <input type="text" name="" id="" placeholder="卡號">
-                    <input type="text" name="" id="" placeholder="持卡人姓名">
-                    <input type="text" name="" id="" placeholder="有效期 (MM/YYYY)">
-                    <input type="text" name="" id="" placeholder="安全碼">
-                </div>
-            </div>
 
-            <div class="invoice">
-                <div class="item_header">發票資訊</div>
-                <input type="radio" name="invoice" id="">二聯式發票
-                <input type="radio" name="invoice" id="">三聯式發票
-                <input type="radio" name="invoice" id="">載具
-            </div>
-         </div>
 
          <div class="choose">
-            <button><a href="http://127.0.0.1:5500/8_cart1.html">返回購物車</a></button>
-            <button><a href="http://127.0.0.1:5500/8_cart3.html">訂單確認</a></button>    
+            <button><a href="http://127.0.0.1:5500/5_allActivity.html">繼續購物</a></button> 
         </div>
     
     

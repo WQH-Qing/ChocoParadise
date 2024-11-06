@@ -29,15 +29,21 @@ div.display{
 }
 div.display>ul.product{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
 }
+
+div.display>ul.product>li{
+    padding: 5px 15px;
+}
+
 .display >h2{
     padding-bottom: 20px;
 }
 .productPhoto{
     width: 260px;
+    height: 260px;
+    object-fit: contain;
 }
 
 .pic{
@@ -71,6 +77,8 @@ div.display>ul.product{
     background-color: rgb(110, 20, 6);
     color: aliceblue;
 }
+
+
 
 div.display>ul.product>li{
     text-align: center;
@@ -128,5 +136,6 @@ div.display>ul.product>li{
     .pic:hover .add-to-cart{
         bottom: 40px;
     }
+    
 }
     

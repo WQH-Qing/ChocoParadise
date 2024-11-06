@@ -39,7 +39,7 @@ $(document).ready(function(){
     })
 
     // 消除CSS中設定的這個hover ==> ul.list  li:hover ul{display: block;} 
-    //  不成功XXX
+    //  不成功
     // $('.list > li').mouseenter(function() {
     //     $(this).removeClass(':hover');
     // });
@@ -47,9 +47,7 @@ $(document).ready(function(){
 
 // 手機版的選單點選
     $('.list > li').click(function(e) {
-        // 防止事件冒泡到父元素
-        e.stopPropagation();
-        
+        e.stopPropagation();        
         $(this).children('.dropdown-open').slideToggle();
         $(this).siblings().children('.dropdown-open').slideUp();
     });
@@ -59,8 +57,30 @@ $(document).ready(function(){
         $('.dropdown-open').slideUp();
     });
 
+//數量按鈕
+/* <div class="btnNum">
+        <button class="removeNumber">–</button>
+        <input type="text" class="num" value="1">
+        <button class="addNumber">+</button>
+</div> */
+
+    $('.addNumber').click(function() {
+        let quantityInput = $(this).siblings('.num');
+        let currentQuantity = parseInt(quantityInput.val());
+        quantityInput.val(currentQuantity + 1);
+    });
+
+    $('.removeNumber').click(function() {
+        let quantityInput = $(this).siblings('.num');
+        let currentQuantity = parseInt(quantityInput.val());
+        if (currentQuantity > 1) { 
+            quantityInput.val(currentQuantity - 1);
+        }
+    });
+
+
+    
+})
     
 
-
-
-})
+    

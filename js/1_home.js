@@ -15,7 +15,7 @@ $(document).ready(function () {
     let timer = setInterval(moveToNext, 5000)
 
     $('#contentButton li').click(function(){
-        clearInterval(timer)  // 停止計時器
+        clearInterval(timer)  //停止
 
         index = $(this).index()
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
         $(this).addClass('clicked')
         $('#contentButton li').not(this).removeClass('clicked')
 
-        timer = setInterval(moveToNext, 5000)  // 重置計時器
+        timer = setInterval(moveToNext, 5000)  // 重置
     })
 
     function moveToNext(){

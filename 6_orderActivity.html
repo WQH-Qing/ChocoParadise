@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/0_general.css">
-    <link rel="stylesheet" href="./css/6_shopping.css">
+    <link rel="stylesheet" href="./css/6_orderActivity.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/0_general.js"></script>
@@ -71,13 +71,10 @@
      <div class="left">
         <div class="list">
             <ul class="product">
-                <li><a href="#">全站商品</a></li>
-                <li><a href="#">生巧克力</a></li>
-                <li><a href="#">堅果巧克力</a></li>
-                <li><a href="#">夾心巧克力</a></li>
-                <li><a href="#">麵包蛋糕</a></li>
-                <li><a href="#">冰淇淋</a></li>
-                <li><a href="#">期間限定</a></li>
+                <li><a href="#">全站活動</a></li>
+                <li><a href="#">巧克力DIY</a></li>
+                <li><a href="#">免費導覽</a></li>
+                <li><a href="#">深度品鑑</a></li>
             </ul>
         </div>   
     </div>
@@ -85,70 +82,74 @@
      <div class="right">
         <div class="wrapProduct">     
             <div class="photo">
-                <img src="./imgFinal/cupcake1.jpg"  class="mainPhoto">
+                <img src="./imgFinal/dinosaur6.jpg"  class="mainPhoto">
                 <div class="miniPhoto">
-                    <img src="./imgFinal/cupcake1.jpg" class="miniPhoto">
-                    <img src="./imgFinal/cupcake2.jpg" class="miniPhoto">
-                    <img src="./imgFinal/cupcake3.jpg" class="miniPhoto">
+                    <img src="./imgFinal/dinosaur6.jpg" class="miniPhoto">
+                    <img src="./imgFinal/dinosaur5.jpg" class="miniPhoto">
+                    <img src="./imgFinal/dinosaur4.jpg" class="miniPhoto">
                 </div>
             </div>
             <div class="order">
                 <div class="orderText">
-                    <h2>杯子蛋糕-6入組</h2>
-                    <p>NTD$ 360</p>
+                    <h2>巧克力DIY(化石版片)</h2>
+                    <p>NTD$ 250</p>
+                </div>
+                <div class="date">
+                    <label for="date">日期</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="event">                    
+                    <label for="event">場次</label>
+                    <select name="event" id="event">
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                    </select>
                 </div>
                 <div class="num">
                     <label for="num">數量</label>
-                    <div class="buyProject">
                         <div class="btnNum">
                             <button class="removeNumber">–</button>
                             <input type="text" class="num" value="1">
                             <button class="addNumber">+</button>
                         </div>
-                        <div class="btnSbmt">
-                            <button type="submit" class="cart">加入購物車</button>
-                            <button type="submit" class="buy">立即購買</button>
-                        </div>
-                    </div>
                 </div>
-                <hr>
-                <p>
-                    本商品適用活動<br>
-                    ◆全館商品任選第三件77折<br>
-                    ◆2,000現折$100｜3,000現折$300｜5,000現折$600｜10,000現折1,200 <br>
-                    ◆滿600贈可可奶茶｜滿1,500贈松露巧克力<br>
-                </p>
+                <div class="btnSbmt">
+                    <button type="submit" class="cart">加入購物車</button>
+                    <button type="submit" class="buy">立即購買</button>
+                </div>
             </div>
         </div>
         <!-- 右下面商品介紹 -->
         <div class="features">
             <hr>
-            <h2>◆◇商品描述◇◆</h2>
+            <h2>活動介紹</h2>
             
-                <h3>**甜蜜的小驚喜：杯子蛋糕的美味旅程**</h3>
+            <p>－ 行程資訊 －</p>
+            <p>• 場次時間：</p>
+            <p>週一至週五下午場次14:00、15:00、16:00</p>
+            <p>週六及週日上午場次10:00、11:00</p>
+            <p>週六及週日下午場次14:00、15:00、16:00</p>
+            <p>• 行程長度：約40-60分鐘(含成品冷凍時間20分鐘)</p>
+            <p>• 報到時間：每場次請提前 10 分鐘到場報到</p>
+            <p>• 報到地點：1樓櫃台</p>
+            <p>活動流程:</p>
+            <p>第一階段｜約10-15分鐘由專業解說員介紹可可樹到巧克力的製程。<p>第二階段｜親自體驗巧克力的流動感，發揮自由的想像力與創造力，依照選擇樣式創作出屬於自己的巧克力。</p>
+            <p>*製作完成後需再等待20分鐘成品冷卻時間。</p>
 
-                <p>在忙碌的生活中，有時候我們都需要一點小確幸，來為平淡的日子增添色彩。而這份色彩，正是來自我們精緻可口的杯子蛋糕！不論是與朋友共享，還是獨自享受，這些小小的甜點都能瞬間帶來幸福的感覺。</p>
-
-
-                <h3>**精緻的外觀，完美的呈現**</h3>
-
-                <p>除了口味，我們的杯子蛋糕在外觀上也絕對不馬虎。每款蛋糕都由專業烘焙師精心裝飾，色彩繽紛的糖霜和新鮮的水果裝飾，不僅讓人垂涎欲滴，更是拍照打卡的最佳選擇。無論是生日派對、婚禮還是公司慶祝，我們的杯子蛋糕都能成為現場的焦點，為你的活動增添無限光彩。</p>
-
-                <h3>**新鮮製作，健康安心**</h3>
-
-                <p>我們深知，食品的品質對顧客來說至關重要。因此，每天的杯子蛋糕都是在最優質的食材下新鮮製作，並不添加任何防腐劑，保證每一口都充滿自然的美味。我們選用當季的新鮮食材，並以精心的烘焙技術，讓你不僅能享受甜點的美味，更能感受到健康的選擇。</p>
-
-                <h3>**甜蜜的驚喜，送給愛的人**</h3>
-
-                <p>想要表達心意嗎？我們的杯子蛋糕也是送禮的最佳選擇！無論是生日、節日或是任何值得慶祝的日子，精美的杯子蛋糕都能為你的祝福增添一份甜蜜。在包裝上，我們也同樣用心，讓每一份蛋糕都能成為獨特的禮物，傳遞你的心意。</p>
-
-                <h3>**用心製作，讓每一口都是幸福**</h3>
-
-                <p>我們的使命，就是讓每一位顧客都能在品嚐我們的杯子蛋糕時，感受到滿滿的幸福。我們相信，甜點不僅是食物，更是情感的寄託，是生活中小小的儀式感。無論是慶祝成功，還是安慰心情，一份美味的杯子蛋糕都能成為最好的陪伴。</p>
-
-                <p>現在就來體驗這份甜蜜吧！我們期待著用心製作的杯子蛋糕，為你的每一天帶來無限的美好與幸福！</p>
-                   
-        </div>
+            <br>
+            <p>注意事項:</p>
+            <p>1.票券無法及時使用，僅提供至少活動前三日之預約(例如:2/4活動最晚須於2/1完成訂單)。</p>
+            <p>2.所預約之活動日期 0 ~ 3 天之間取消，無法提供退款。</p>
+            <p>3.每場次活動請於活動前5-15分鐘報到。</p>
+            <p>4.活動依規定時間準時開課，逾時將不重新解說可可的故事。</p>
+            <p>5.活動材料及配料、座位依照報名份數提供，恕無法增減及更換。</p>
+            <p>6.活動期間12歲以下孩童須由家長全程陪同，兒童之監護責任皆由家長自行承擔。</p>
+            <p>7.園區寵物友善，請進入建築物時以(寵物推車/袋)進入。</p>
+            <p>8.活動全面採「預約制」，現場報名須配合活動時段及人力安排無提供特別優惠。</p>
+        </div> 
      </div>
 
      
