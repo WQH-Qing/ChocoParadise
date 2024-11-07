@@ -64,6 +64,8 @@ $(document).ready(function(){
         <button class="addNumber">+</button>
 </div> */
 
+
+
     $('.addNumber').click(function() {
         let quantityInput = $(this).siblings('.num');
         let currentQuantity = parseInt(quantityInput.val());

@@ -226,6 +226,11 @@ div.btnNum input.num{
     text-align: center;
 }
 
+.btnNum input{
+    width: 100%;
+    
+}
+
 
 /* 手機斷點 */
 @media screen and (max-width:768px){
